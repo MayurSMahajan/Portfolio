@@ -1,13 +1,369 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --primary : #102534;
+  --primary-heading : #3379AB;
+  --primary-form-text : #248fdb;
+  --light-bg : #1A2E3D; 
+  --dark-bg: #0F1D2A;
+  --accent-color : #fb06ee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: var(--primary);
+  color: #fff;
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,Georgia, 'Times New Roman', Times, serif;
+}
+
+/*-----------------------------------------NavBar------------------------------------------*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.name-branding{
+  font-size: 16px;
+  line-height: 0.25;
+  display: inline-block;
+  width: 30%;
+}
+
+.my-role{
+  color:var(--accent-color);
+}
+
+.name-branding p{
+  margin-left: 5%;
+}
+
+.navbar-items{
+  display: inline-block;
+  width: 70%;
+}
+
+.navbar-items .navbar-links{
+  list-style: none;
+  cursor: pointer;
+}
+.navbar-links a:hover{
+  color: var(--primary-heading);
+  transition: color ease-in-out 0.3s;
+}
+
+.navbar-items .navbar-links a{
+  padding-right: 5%;
+  float: right;
+}
+
+/*-----------------------------------------NavBar End------------------------------------------*/
+/*-----------------------------------------Heading Start---------------------------------------*/
+
+.heading-container{
+  display:inline-block;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.main-heading{
+  font-size: 3.25rem;
+  font-family: Chivo, Barlow, Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-top:3%;
+  color: #fff;
+}
+.main-heading-two{
+  text-align: right;
+  font-size: 3.25rem;
+  margin: 0;
+  margin-top: 0;
+  font-family: Chivo, Barlow, Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+.grow-text{
+  color:var(--accent-color);
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  font-family: Chivo, Barlow, Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-heading{
+  width: 100%;
+  font-size: 1.1rem;
+  color: #ddd;
+  text-align: center;
+}
+
+/*-----------------------------------------Heading End---------------------------------------*/
+/*-----------------------------------------My Work Start---------------------------------------*/
+.my-work-heading{
+  display: block;
+  height: auto;
+  font-weight: 300;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.circle-down-icon{
+  margin-left: 20px;
+  scale: 2;
+  animation: bounce 2s;
+}
+.circle-down-icon:hover{
+  transform: scale(0.9);
+  transition: transform ease-in-out 0.3s;
+}
+.circle-down-icon:active{
+  color: var(--primary-heading);
+}
+
+.slider {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #fff;
+  z-index: 10;
+  scale:2;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  scale:2;
+  font-size: 3rem;
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow:active{
+  color: var(--primary-heading);
+}
+.right-arrow:active{
+  color: var(--primary-heading);
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 0.65s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 0.65s;
+  transform: scale(1.08);
+}
+
+.slide-description{
+  font-family: chivo, barlow, sans-serif, Tahoma, Geneva, Verdana;
+  font-weight: 400;
+  display: block;
+  padding: 1% 25%;
+  text-align: center;
+}
+
+.project-link{
+  margin-left: 3%;
+  scale: 2;
+}
+.project-link-icon{
+  margin-left: 3%;
+  padding-top: 1%;
+  scale: 2;
+}
+
+/*-----------------------------------------My Work End---------------------------------------*/
+/*--------------------------------------About Me Start---------------------------------------*/
+.about-me-heading{
+  margin-top: 10%;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+}
+.about-me-container{
+  display: grid;
+  padding: 5%;
+  grid-template-columns: 40% 60%;
+}
+.profile{
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.profile-image img{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.profile-info {
+  display: inline-block;
+  width: 80%;
+  color: #ccc;
+}
+.attribute-div{
+  padding-left: 5%;
+  padding-top:0;
+  background-color: var(--light-bg);
+  margin:5%;
+  margin-top: 0;
+  padding: 1% 5%;
+  border-radius: 10px;
+}
+.attribute-content{
+  color: #fff;
+  font-size: 1rem;
+}
+
+.attribute-name{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-heading);
+}
+
+
+
+/*-----------------------------------------About Me End-------------------------------------*/
+/*--------------------------------------------Contact---------------------------------------*/
+.contact-heading{
+  display: block;
+  margin-bottom:1%;
+  font-weight: 300;
+  text-align: center;
+}
+.email-status{
+  display: block;
+  margin-bottom: 4%;
+  text-align: center;
+}
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactForm label{
+  margin-right: 47%;
+}
+.formField{
+  padding: 1.25%;
+  font-size: 1.4rem;
+  margin-bottom: 2%;
+  display: block;
+  width: 50%;
+  max-lines: 1;
+  font-family:  Barlow, Tahoma, Geneva, Verdana, sans-serif;
+  height: auto;
+  background-color: var(--light-bg);
+  border: none;
+  border-radius: 10px;
+  color: var(--primary-form-text);
+}
+.formTextArea{
+  padding: 1%;
+  font-size: 1.4rem;
+  margin-bottom: 2%;
+  display: block;
+  width: 50%;
+  max-lines: 5;
+  height: 200px;
+  font-family:  Barlow, Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-bg);
+  border: none;
+  border-radius: 10px;
+  color: var(--primary-form-text);
+  
+}
+.formBtnDiv {
+  display: block;
+  padding:0%;
+  width: 52%;
+}
+.formBtn{
+  float: right;
+  padding:1.5% 5%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  background-color: var(--primary-form-text);
+  border: none;
+  border-radius: 10px;
+}
+.formBtn:hover{
+  color:#fff;
+  background-color: var(--accent-color);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.scrollTop{
+  float: right;
+  scale: 2;
+  margin-right: 20px;
+  animation: bounce infinite ease-in-out 1.5s;
+}
+.scrollTop:active{
+  color: var(--primary-heading);
+}
+
+
+/*-----------------------------------------Contact End -------------------------------------*/
+/*---------------------------------------Footer Start---------------------------------------*/
+
+.footer{
+  display: block;
+  height: auto;
+  background-color: var(--dark-bg);
+  padding: 2%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.made-with-p{
+  display:inline-block;
+  padding-top:1%;
+}
+.copyright-p{
+  display: inline-block;
 }
