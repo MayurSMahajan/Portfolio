@@ -9,7 +9,7 @@ function AboutMe() {
         <div className="about-me-container">
             <div className="profile">
                 <div className="profile-image">
-                    <img src="images/profile.jpeg" alt="profile-image" />
+                    <img src="images/profile.jpeg" alt="profile" />
                 </div>
                 <div className="profile-info">
                     <h2>Mayur S. Mahajan</h2>

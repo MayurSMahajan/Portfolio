@@ -21,7 +21,7 @@ function NavBarItems(){
                 offset={0}
                 duration= {800}
             >About Me</Link>
-                <a>Resume</a>
+                <a href="/resume.pdf">Resume</a>
             </div>
         </div>
     )

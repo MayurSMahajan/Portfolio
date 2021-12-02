@@ -15,7 +15,7 @@ function Contact(){
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_7xkfssx', 'template_f44utxe', form.current, 'user_WRhxrsGWD860ly8G683cy')
+        emailjs.sendForm('service_7xkfssx', 'template_f44utxe', form.current, process.env.REACT_APP_API_KEY)
           .then((result) => {
               setEmailStatus('Email sent successfully !');
                 setNameVal('');

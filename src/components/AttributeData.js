@@ -21,7 +21,7 @@ export const AttributeData = [
         id: 3,
         name: 'ACHIEVEMENTS',
         content: [
-            'Completed a Research Paper titled - \" Will GitHub Copilot take away the jobs of Developers? \" | 2021',
+            'Completed a Research Paper titled - Will GitHub Copilot take away the jobs of Developers? | 2021',
             'Runners Up | MSBTE State Level Technical Quiz Competition | 2020',
             'Event Organizer | HotKeys Event at Government Polytechnic Pune | 2020',
         ]
