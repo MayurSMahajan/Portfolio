@@ -412,19 +412,19 @@ body{
   .profile-info{
     width: 90%;
   }
-  .formField{
+  .formField, .formTextArea{
     width: 70%;
+    font-size: 1.2rem;
+    padding-left: 2%;
   }
-  .formTextArea{
-    width: 70%;
-  }
+  
   .formBtnDiv{
     width: 72%;
   }
 }
 @media screen and (max-width: 485px){
   .main-heading, .main-heading-two{
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .grow-text{
     font-size: 3rem;
@@ -432,11 +432,16 @@ body{
 
   @media screen and (max-width:385px) {
     .name-branding{
-      width: 50%;
+      width: 72.5%;
     }
     .scroll-links{
       display: none;
     }
+    .formBtn{
+      padding: 2% 7.5%;
+    }
+    .circle-down-icon, .left-arrow, .right-arrow, .scrollTop{
+      scale: 3;
+    }
   }
-  
 }
