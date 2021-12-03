@@ -6,6 +6,7 @@ function NavBarItems(){
         <div className="navbar-items"> 
             <div className="navbar-links">
             <Link
+                className="scroll-links"
                 activeClass="active"
                 to="contact"
                 spy={true}
@@ -14,6 +15,7 @@ function NavBarItems(){
                 duration= {800}
             >Let's Connect</Link>
             <Link
+                className="scroll-links"
                 activeClass="active"
                 to="about-me"
                 spy={true}
@@ -21,7 +23,7 @@ function NavBarItems(){
                 offset={0}
                 duration= {800}
             >About Me</Link>
-                <a href="/resume.pdf">Resume</a>
+                <a href="/resume.pdf" className="resume-link" download>Resume</a>
             </div>
         </div>
     )

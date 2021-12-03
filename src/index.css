@@ -56,6 +56,14 @@ body{
   float: right;
 }
 
+.resume-link{
+  text-decoration: none;
+  color: #fff;
+}
+.resume-link:active{
+  color: var(--light-bg);
+}
+
 /*-----------------------------------------NavBar End------------------------------------------*/
 /*-----------------------------------------Heading Start---------------------------------------*/
 
@@ -366,4 +374,69 @@ body{
 }
 .copyright-p{
   display: inline-block;
+}
+
+/*---------------------------------------Footer End---------------------------------------*/
+/*-------------------------------Responsive Code start------------------------------------*/
+
+@media screen and (max-width: 824px){
+
+  .left-arrow,.right-arrow{
+    color:var(--light-bg);
+  }
+  .sub-heading{
+    text-align: left;
+  }
+  
+}
+@media screen and (max-width: 565px){
+  .about-me-container{
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  .profile-image img{
+    width: 60%;
+  }
+  .additional-about{
+    display: none;
+  }
+  .attributes{
+    text-align: left;
+  }
+  .navbar{
+    margin-bottom: 5%;
+  }
+  .slide-description{
+    padding: 1% 15%;
+  }
+  .profile-info{
+    width: 90%;
+  }
+  .formField{
+    width: 70%;
+  }
+  .formTextArea{
+    width: 70%;
+  }
+  .formBtnDiv{
+    width: 72%;
+  }
+}
+@media screen and (max-width: 485px){
+  .main-heading, .main-heading-two{
+    font-size: 2.5rem;
+  }
+  .grow-text{
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width:385px) {
+    .name-branding{
+      width: 50%;
+    }
+    .scroll-links{
+      display: none;
+    }
+  }
+  
 }
