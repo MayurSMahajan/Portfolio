@@ -14,7 +14,7 @@ function Footer (){
         <footer className="footer">
             <div className="social-links">
                     <a href="https://github.com/MayurSMahajan"><GitHubIcon sx={iconStyle}/></a>
-                    <a href="https://www.linkedin.com/in/mayur-mahajan-596701215/"><LinkedInIcon sx={iconStyle}/></a>
+                    <a href="https://www.linkedin.com/in/mayur-mahajan-596701215/"><LinkedInIcon className="icon" sx={iconStyle}/></a>
                     <a href="https://www.youtube.com/channel/UCN9Dnl0-fh1pTRI7gaPJJPg"><YouTubeIcon sx={iconStyle}/></a>
                     <a href="https://www.instagram.com/_whats_in_a.name_/"><InstagramIcon sx={iconStyle}/></a>
             </div>

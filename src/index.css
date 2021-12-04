@@ -429,19 +429,47 @@ body{
   .grow-text{
     font-size: 3rem;
   }
-
-  @media screen and (max-width:385px) {
-    .name-branding{
-      width: 72.5%;
-    }
-    .scroll-links{
-      display: none;
-    }
-    .formBtn{
-      padding: 2% 7.5%;
-    }
-    .circle-down-icon, .left-arrow, .right-arrow, .scrollTop{
-      scale: 3;
-    }
+}
+@media screen and (max-width:385px) {
+  .name-branding{
+    width: 75%;
+    font-size: 12px;
   }
+  .sub-heading, .profile-info{
+    font-size : 0.8rem;
+  }
+  .slide-description{
+    font-size: 0.8rem;
+    padding: 1% 5%;
+    text-align: left;
+  }
+
+  .attribute-name{
+    font-size: 1.125rem;
+  }
+  
+  .attribute-content{
+    font-size: 0.85rem;
+  }
+
+  .scroll-links{
+    display: none;
+  }
+  .formBtn{
+    padding: 2% 7.5%;
+    float: none;
+  }
+  .circle-down-icon, .left-arrow, .right-arrow, .scrollTop{
+    scale: 2.65;
+  }
+}
+@media screen and (max-width:260px) {
+  .main-heading, .main-heading-two{
+    font-size: 1.75rem;
+  }
+  
+  .social-links{
+    scale: 0.75;
+  }
+  
 }
