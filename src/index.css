@@ -432,7 +432,7 @@ body{
 }
 @media screen and (max-width:385px) {
   .name-branding{
-    width: 75%;
+    width: 75.6%;
     font-size: 12px;
   }
   .sub-heading, .profile-info{
@@ -456,7 +456,7 @@ body{
     display: none;
   }
   .formBtn{
-    padding: 2% 7.5%;
+    padding: 2% 8.5%;
     float: none;
   }
   .circle-down-icon, .left-arrow, .right-arrow, .scrollTop{
