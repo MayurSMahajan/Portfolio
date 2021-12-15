@@ -3,7 +3,8 @@ export const AttributeData = [
         id: 1,
         name: 'EXPERIENCE',
         content: [
-            'Full Stack Developer Intern | Value Wealth Creatos Ltd. | 2021',
+            'Web and Desktop Development Intern | BosLeo LLC. | December 2021 - Present',
+            'Full Stack Developer Intern | Value Wealth Creatos Ltd. | October 2021 - November 2021',
             'Youtube Channel | Mayur Mahajan - Frontend Coder | 2020 - '
         ]
     },
