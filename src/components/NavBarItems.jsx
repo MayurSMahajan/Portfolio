@@ -23,7 +23,10 @@ function NavBarItems(){
                 offset={0}
                 duration= {800}
             >About Me</Link>
+                
                 <a href="/resume.pdf" className="resume-link" download>Resume</a>
+                <a href="/easymanage_internship_certificate.pdf" className="certificate-link" download>Intership</a>
+                
             </div>
         </div>
     )
