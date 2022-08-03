@@ -12,19 +12,20 @@ export const AttributeData = [
         id: 2,
         name: 'SKILLS',
         content: [
-            'Data Science with Python | 6 Months Experience',
+            'Flutter | 8 Months Experience',
             'React, Express, NodeJS, MongoDB, Git, SQL | 1 Year Experience',
-            'UI/UX Designing, Figma, Adobe XD | 1 Year Experince',
-            'Data Structures And Algorithms, Java, C++, Python, C | 3 Year Experience',
+            'UI/UX Designing, Figma, Adobe XD | 2 Year Experince',
+            'Data Structures And Algorithms, Java, C++, Python, C | 2 Year Experience',
         ]
     },
     {
         id: 3,
         name: 'ACHIEVEMENTS',
         content: [
+            'Won MLH Birthday Bash Hackathon July 2022'
             'Completed a Research Paper titled - Will GitHub Copilot take away the jobs of Developers? | 2021',
             'Runners Up | MSBTE State Level Technical Quiz Competition | 2020',
-            'Event Organizer | HotKeys Event at Government Polytechnic Pune | 2020',
+            
         ]
     },
     {
