@@ -12,10 +12,10 @@ export const AttributeData = [
         id: 2,
         name: 'SKILLS',
         content: [
-            'Flutter | 8 Months Experience',
-            'React, Express, NodeJS, MongoDB, Git, SQL | 1 Year Experience',
+            'Mobile Development with Flutter | 8 Months Experience',
             'UI/UX Designing, Figma, Adobe XD | 2 Year Experince',
             'Data Structures And Algorithms, Java, C++, Python, C | 2 Year Experience',
+            'React, Express, NodeJS, MongoDB, Git, SQL | 1 Year Experience',
         ]
     },
     {
