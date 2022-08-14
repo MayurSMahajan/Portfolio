@@ -1,7 +1,7 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 function Footer (){
@@ -16,7 +16,7 @@ function Footer (){
                     <a href="https://github.com/MayurSMahajan"><GitHubIcon sx={iconStyle}/></a>
                     <a href="https://www.linkedin.com/in/mayur-mahajan-596701215/"><LinkedInIcon className="icon" sx={iconStyle}/></a>
                     <a href="https://www.youtube.com/channel/UCN9Dnl0-fh1pTRI7gaPJJPg"><YouTubeIcon sx={iconStyle}/></a>
-                    <a href="https://www.instagram.com/_whats_in_a.name_/"><InstagramIcon sx={iconStyle}/></a>
+                    <a href="https://twitter.com/MayurMa12867461"><TwitterIcon sx={iconStyle}/></a>
             </div>
             <p className="made-with-p" > Made with ❤️ and React JS</p>
             <p className="copyright" > &copy; Mayur Mahajan {year}</p>
