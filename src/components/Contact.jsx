@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import { animateScroll as scroll } from "react-scroll";
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
@@ -13,17 +13,18 @@ function Contact(){
     
     
     const sendEmail = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
     
-        emailjs.sendForm('service_7xkfssx', 'template_f44utxe', form.current, process.env.REACT_APP_API_KEY)
-          .then((result) => {
-              setEmailStatus('Email sent successfully !');
-                setNameVal('');
-                setEmailVal('');
-                setMsgVal('');
-          }, (error) => {
-              setEmailStatus('Email not sent! Try again.');
-          });
+        // emailjs.sendForm('service_7xkfssx', 'template_f44utxe', form.current, process.env.REACT_APP_API_KEY)
+        //   .then((result) => {
+        //       setEmailStatus('Email sent successfully !');
+        //         setNameVal('');
+        //         setEmailVal('');
+        //         setMsgVal('');
+        //   }, (error) => {
+        //       setEmailStatus('Email not sent! Try again.');
+        //   });
+
       };
     
     return <div id="contact">
