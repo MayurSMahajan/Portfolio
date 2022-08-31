@@ -25,7 +25,7 @@ function NavBarItems(){
             >About Me</Link>
                 
                 <a href="/resume.pdf" className="resume-link" download>Resume</a>
-                <a href="/easymanage_internship_certificate.pdf" className="certificate-link" download>Intership</a>
+                {/* <a href="/easymanage_internship_certificate.pdf" className="internship-link" download>Intership</a> */}
                 
             </div>
         </div>
