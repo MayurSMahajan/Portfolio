@@ -1,12 +1,21 @@
 export const SliderData = [
   {
     image:
-      'images/valuewealthpreview.png',
+    'images/sih.png',
     title: 
-    'Value Wealth Creators Official Website',
+    'Daemon - Speeches Playing App',
+    description:
+     'This is a cross platform app I created for Smart India Hackathon 2022. This app allows users to watch videos or listen to audios of speeches that are AI generated. The backend is linked with Firebase and is used to store these speeches.',
+     link:'https://github.com/MayurSMahajan/FrontendSIH'
+  },
+  {
+    image:
+      'images/furniture_app.png',
+    title: 
+    'ForMeChair - Furniture App',
     description: 
-    'I created this website with Express, Node, Mongoose, MongoDB, and React.js. It is a course registration site, where customers can subscribe to a course and pay their fees. '  ,
-    link: 'http://valuewealthcreator.herokuapp.com/'
+    'I have designed UI/UX for this app. I am currently working on this app. I want to create it using Flutter and Firebase.',
+    link:'https://www.figma.com/file/jVGfvoLgJkoKHlHZ2yywBs/furniture-app?node-id=0%3A1'
   },
   {
     image:
@@ -19,13 +28,14 @@ export const SliderData = [
   },
   {
     image:
-      'images/revisionmcqapp.png',
+      'images/valuewealthpreview.png',
     title: 
-    'Revision MCQ App',
+    'Value Wealth Creators Official Website',
     description: 
-    'I have designed UI/UX for this app. I am currently working on this app. I want to create it using Flutter and Firebase. This will be a mcq based revision app.',
-    link:'https://www.figma.com/file/PYK7IjyZcVPWgxXad3SuNN/Untitled?node-id=0%3A1'
+    'I created this website with Express, Node, Mongoose, MongoDB, and React.js. It is a course registration site, where customers can subscribe to a course and pay their fees. '  ,
+    link: 'http://valuewealthcreator.herokuapp.com/'
   },
+  
   {
     image:
     'images/noteskeeper.png',
