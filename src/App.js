@@ -13,7 +13,6 @@ function App() {
       <Heading />
       <MyWork />
       <AboutMe />
-      <Contact />
       <Footer />
     </div>
   );
