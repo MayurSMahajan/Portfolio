@@ -3,21 +3,22 @@ export const AttributeData = [
         id: 1,
         name: 'EXPERIENCE',
         content: [
-            'Flutter Development Intern | EasyManage Services | February 2022 - June 2022',
-            'Web and Desktop Development Intern | BosLeo LLC. | December 2021 - January 2022',
-            'Full Stack Developer Intern | Value Wealth Creatos Ltd. | October 2021 - November 2021',
-            'Youtube Channel | Mayur Mahajan - Frontend Coder | 2020 - '
+            'Software Development Engineer | Realtimate Labs Pvt. Ltd. | October 2023 - Present',
+            'Software Development Engineer Intern | AppFlowy Inc. | January 2023 - October 2023',
+            'Web Development Intern | EasyManage Services | February 2022 - June 2022',
+            'Youtube Channel | Mayur Mahajan| 2020 - '
         ]
     },
     {
         id: 2,
         name: 'SKILLS',
         content: [
-            'Cross-Platform Development with Flutter | 8 Months Experience',
+            'Web Development | 1+ Year Experience',
+            'Cross-Platform Development with Flutter | 1+ Year Experience',
             'Android Development with Java | 6 Months Experience',
-            'UI/UX Designing, Figma, Adobe XD | 2 Years Experince',
-            'Data Structures And Algorithms, Java, C++, C | 2 Years Experience',
-            'React, Express, NodeJS, MongoDB, Git, SQL | 2 Years Experience',
+            'UI/UX Designing, Figma, Adobe XD | 2+ Years Experince',
+            'Data Structures And Algorithms, Java and Python',
+            'React, Express, NodeJS, MongoDB, Git, SQL',
         ]
     },
     {
