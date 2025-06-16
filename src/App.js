@@ -2,7 +2,6 @@ import NavBar from './components/NavBar'
 import Heading from './components/Heading'
 import MyWork from './components/MyWork'
 import AboutMe from './components/AboutMe'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SliderData } from './SliderData';
 import SlideDescription from './SlideDescription';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
@@ -23,28 +23,28 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div id="my-work">
-    <section className='slider'>
-      <ArrowCircleLeftIcon className='left-arrow' onClick={prevSlide} />
-      <ArrowCircleRightIcon className='right-arrow' onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <img src={slide.image} alt='project snap' className='image' />
-            )}
-          </div>
-        );
-      })}
-    </section>
-    <section>
-      <SlideDescription 
-      title = {SliderData[current].title} 
-      info={SliderData[current].description} 
-      link={SliderData[current].link}/>
-    </section>
+      <section className='slider'>
+        <ArrowCircleLeftIcon className='left-arrow' onClick={prevSlide} />
+        <ArrowCircleRightIcon className='right-arrow' onClick={nextSlide} />
+        {SliderData.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? 'slide active' : 'slide'}
+              key={index}
+            >
+              {index === current && (
+                <img src={slide.image} alt='project snap' className='image' />
+              )}
+            </div>
+          );
+        })}
+      </section>
+      <section>
+        <SlideDescription
+          title={SliderData[current].title}
+          info={SliderData[current].description}
+          link={SliderData[current].link} />
+      </section>
     </div>
   );
 };
