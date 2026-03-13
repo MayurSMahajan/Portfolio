@@ -40,20 +40,18 @@ export const experience: ExperienceEntry[] = [
 ];
 
 export const skills: string[] = [
-  "Web Development",
-  "Cross-Platform Development (Flutter)",
-  "Android Development (Java)",
-  "UI/UX Design (Figma, Adobe XD)",
+  "React, Next.js, Angular",
+  "Express, Node.js",
+  "Flutter & Dart",
+  "UI/UX Design (Figma)",
   "Data Structures & Algorithms",
-  "React, Next.js, Express, Node.js",
-  "MongoDB, SQL, Firebase",
-  "Git, TypeScript, Python",
+  "MongoDB, PostgreSQL",
+  "Git, TypeScript, Python"
 ];
 
 export const achievements: string[] = [
   "Smart India Hackathon Winner — PS:GM747, 2022",
   "Won MLH Birthday Bash Hackathon — July 2022",
-  "Research Paper — Will GitHub Copilot take away the jobs of Developers?, 2021",
   "Runners Up — MSBTE State Level Technical Quiz Competition, 2020",
 ];
 

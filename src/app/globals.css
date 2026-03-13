@@ -38,8 +38,8 @@
   --color-text-muted: #57534e;
   --color-border: #262626;
   --color-border-hover: #404040;
-  --color-accent: #2dd4bf;
-  --color-accent-hover: #5eead4;
+  --color-accent: #20a795;
+  --color-accent-hover: #1e6f63;
   --color-accent-muted: #042f2e;
   --color-code-bg: #141414;
   --color-grid: #1a1a1a80;
@@ -92,10 +92,12 @@ button,
    ═══════════════════════════════════════════════════ */
 
 @keyframes blink-caret {
+
   0%,
   100% {
     border-color: transparent;
   }
+
   50% {
     border-color: var(--color-accent);
   }
