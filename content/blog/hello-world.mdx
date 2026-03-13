@@ -1,0 +1,39 @@
+---
+title: "Hello World: Migrating my Portfolio to Next.js"
+date: "2023-11-20"
+description: "Why I decided to migrate my React portfolio to Next.js and how I built a custom MDX blog."
+---
+
+It’s the classic developer rite of passage: redesigning your personal website.
+
+My old portfolio was built using Create React App. It served its purpose, but as I’ve grown more focused on performance, SEO, and developer experience, I knew it was time for an upgrade. I decided to rewrite everything from scratch using **Next.js 15**, **Tailwind CSS v4**, and **TypeScript**.
+
+## Why Next.js?
+
+1. **Server Components:** By default, App Router components are server-rendered. This means zero client-side JavaScript overhead for purely static content like my About or Projects sections.
+2. **Static Export:** My portfolio is just static content. With `output: "export"`, I can generate HTML at build time, leading to near-instant load times.
+3. **MDX Integration:** I wanted a place to jot down thoughts and write technical tutorials. Next.js has first-class support for MDX, right out of the box.
+
+## Building the Markdown Blog
+
+Instead of pulling in a heavy CMS, I opted for a file-system based approach. All my blog posts live in a `content/blog` directory as `.mdx` files. At build time, a small utility script uses Node's `fs` and `gray-matter` to parse the YAML frontmatter.
+
+### The Coder Aesthetic
+
+One of the goals for the redesign was achieving a minimalist "coder" aesthetic. To represent this visually, I went with:
+- **Typography:** JetBrains Mono for headings, Inter for body text.
+- **Color Palette:** A very muted, soft contrast dark mode (`near-black` backgrounds with subtle `gray` text) accented by a single pop of teal/cyan.
+- **Accents:** Code-style identifiers like `// skills` or `~/about/bio.md` instead of typical section headers.
+
+```typescript
+// A sneak peek at the mdx parser
+export function getAllPosts() {
+  const files = fs.readdirSync(contentDir);
+  // ... parse frontmatter and sort by date
+  return posts;
+}
+```
+
+The result? A blazingly fast, SEO-friendly site that genuinely reflects the kind of developer I am today.
+
+Welcome to the new `mayur.dev`.
