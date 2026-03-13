@@ -19,5 +19,6 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/mayur--mahajan/",
   twitter: "https://x.com/Mayur__Mahajan",
   youtube: "https://www.youtube.com/channel/UCN9Dnl0-fh1pTRI7gaPJJPg",
+  medium: "https://medium.com/@mayur23smahajan",
   email: "mailto:mayur23smahajan@gmail.com",
 } as const;

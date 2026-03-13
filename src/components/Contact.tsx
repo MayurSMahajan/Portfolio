@@ -108,6 +108,28 @@ export function Contact() {
               Twitter
             </span>
           </a>
+
+          {/* Medium */}
+          <a
+            href={socialLinks.medium}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 px-5 py-3 rounded-xl
+                       border border-border bg-surface-elevated
+                       hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5
+                       transition-all duration-300"
+          >
+            <svg
+              className="h-5 w-5 text-text-muted group-hover:text-accent transition-colors"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M13.54 12a6.8 6.8 0 11-6.77 6.82A6.77 6.77 0 0113.54 12zm7.42.3a3.4 3.4 0 11-3.41 3.41 3.41 3.41 0 013.41-3.41zm3.04.53a1.44 1.44 0 11-1.44 1.44 1.44 1.44 0 011.44-1.44z" />
+            </svg>
+            <span className="font-mono text-sm text-text-secondary group-hover:text-text-primary transition-colors">
+              Medium
+            </span>
+          </a>
         </div>
       </div>
     </section>
