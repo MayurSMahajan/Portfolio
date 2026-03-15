@@ -14,6 +14,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "AnyCarousel",
+    description:
+      "A carousel component for React that allows you to create carousels with custom animations and transitions.",
+    techStack: ["NextJS", "React", "TS", "CSS"],
+    githubUrl: "https://github.com/MayurSMahajan/AnyCarousel",
+    liveUrl: "https://any-carousel.vercel.app/",
+    image: "/images/anycarousel.png",
+  },
+  {
     title: "Transformx",
     description:
       "A habit tracking app based on the book Atomic Habits. Designed the UI/UX and implemented cross-platform using Flutter and Firebase.",
@@ -53,14 +62,5 @@ export const projects: Project[] = [
     techStack: ["React", "JavaScript", "CSS"],
     githubUrl: "https://github.com/MayurSMahajan/KeeperApp",
     image: "/images/noteskeeper.png",
-  },
-  {
-    title: "Personal Site v1",
-    description:
-      "My first personal website built with vanilla web technologies. A clean, static site showcasing my early work.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://mayursmahajan.github.io/",
-    liveUrl: "https://mayursmahajan.github.io/",
-    image: "/images/myoldsite.png",
-  },
+  }
 ];
