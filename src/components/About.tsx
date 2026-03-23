@@ -5,6 +5,7 @@
 
 import Image from "next/image";
 import { personal } from "@/data/personal";
+import { CurrentlyReading } from "@/components/CurrentlyReading";
 
 export function About() {
   return (
@@ -62,6 +63,8 @@ export function About() {
                 <p className="mt-1 text-sm text-text-primary">Full-Stack & Mobile</p>
               </div>
             </div>
+
+            <CurrentlyReading />
           </div>
         </div>
       </div>

@@ -21,4 +21,5 @@ export const socialLinks = {
   youtube: "https://www.youtube.com/channel/UCN9Dnl0-fh1pTRI7gaPJJPg",
   medium: "https://medium.com/@mayur23smahajan",
   email: "mailto:mayur23smahajan@gmail.com",
+  goodreadsRss: "https://www.goodreads.com/review/list_rss/176169282?key=ZTwtofq8qOcmwdL6oIiFWNH_EriKn9-ZP92FIZlMAR1XYxB3&shelf=currently-reading",
 } as const;
