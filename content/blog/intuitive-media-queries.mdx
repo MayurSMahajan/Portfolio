@@ -1,0 +1,86 @@
+---
+title: "Writing More Readable and Intuitive CSS Media Queries"
+date: "2024-09-01"
+description: "This article shall focus on how you can make your media queries more intuitive and concise."
+---
+
+## The Traditional Approach:
+
+If you’re anything like I was before August 17, 2024, you probably copy-paste your media queries with the trusty min-width and max-width syntax, without being entirely sure what those terms actually do. Even if you once knew, you’ve likely forgotten. Take a look at this code:
+
+```css
+@media only screen and (min-width: 600px){
+  // some shady stuff...
+}
+```
+
+If you, too, can’t confidently answer what the above piece of code does without hesitation, then we’re in the same boat.
+
+Oh by the way, the above code means that the styles will only be applied if the screen width is 600 pixels or greater. If the screen is narrower than 600 pixels, these styles won't be applied.
+
+## A More Intuitive Approach:
+
+Now, let’s consider a more intuitive way to achieve the same result. Instead of using the traditional syntax, you could write:
+
+```css
+@media only screen and (width > 600px){
+  // some shady stuff...
+}
+```
+
+This is more readable and intuitive, right? It may not seem much more concise here, but the difference becomes more apparent when writing complex queries.
+
+For instance, the following query:
+```css
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  // some shady stuff...
+}
+```
+
+can be written as:
+
+```css
+@media only screen and (600px <= width <= 900px) {
+  // some shady stuff...
+}
+```
+
+Neat right?
+
+Both snippets achieve the same thing: they apply styles when the width is between 600px and 900px.
+
+## Applying This Approach to More Complex Queries:
+
+Let’s take a look at a more complex example:
+
+```css
+@media (min-width: 30em) and (max-width: 50em) and (orientation: landscape) {
+  /* Styles here */
+}
+```
+
+This can be rewritten as:
+
+```css
+@media (30em <= width <= 50em) and (orientation: landscape) {
+  /* Styles here */
+}
+```
+
+This syntax is more concise and mimics mathematical comparison operations, making it easier to understand at a glance. It’s clear that the styles apply when the viewport width is between 30em and 50em, inclusive.
+
+## Advantages:
+
+- **Clarity**: The intent of the media query is immediately clear, without needing to parse logical operators.
+- **Conciseness**: Fewer words and symbols mean less cluttered code.
+- **Consistency**: Mirrors the way conditions are typically expressed in mathematics and other programming languages, making it more intuitive.
+
+## Conclusion
+
+The traditional media query syntax, while powerful, can be difficult to read and understand quickly. By adopting a more readable alternative, like `(30em <= width <= 50em)`, we can write media queries that are both concise and intuitive.
+
+If you find this alternative syntax appealing, consider integrating it into your CSS or SCSS practice, and let me know how it improves your workflow.
+
+## Final Note:
+
+That’s it for this article. I hope you learned something new today. Special thanks to ChatGPT for assisting in the development of this article. To explore more about CSS Media Queries, check out the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries).
