@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { personal, socialLinks } from "@/data/personal";
 
 /**
  * Font configuration — JetBrains Mono for headings/code, Inter for body text.
@@ -25,11 +26,13 @@ const inter = Inter({
  * SEO metadata — title, description, Open Graph, etc.
  */
 export const metadata: Metadata = {
-  title: "Mayur Mahajan — Software Developer",
+  title: `${personal.name} — ${personal.role}`,
   description:
-    "Software Developer experienced in web and mobile development. Building software that matters. Open source contributor to AppFlowy, Flutter, and React.",
+    "Developer Relations Engineer, with a background in Software Development, experienced in web and mobile development. Building software that matters. Open source contributor to AppFlowy, Flutter, and React.",
   keywords: [
     "Mayur Mahajan",
+    "Developer Relations Engineer",
+    "DevRel",
     "Software Developer",
     "Full Stack Developer",
     "React",
@@ -37,11 +40,11 @@ export const metadata: Metadata = {
     "Flutter",
     "Portfolio",
   ],
-  authors: [{ name: "Mayur Mahajan" }],
+  authors: [{ name: personal.name }],
   openGraph: {
-    title: "Mayur Mahajan — Software Developer",
+    title: `${personal.name} — ${personal.role}`,
     description:
-      "Software Developer experienced in web and mobile development. Building software that matters.",
+      "Developer Relations Engineer, with a background in Software Development, experienced in web and mobile development. Building software that matters.",
     type: "website",
   },
 };
@@ -51,6 +54,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: personal.name,
+    jobTitle: personal.role,
+    description: personal.bio[0],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: personal.location.split(",")[0].trim(),
+      addressCountry: personal.location.split(",")[1]?.trim() || "India",
+    },
+    sameAs: [
+      socialLinks.github,
+      socialLinks.linkedin,
+      socialLinks.twitter,
+      socialLinks.youtube,
+      socialLinks.medium,
+    ],
+  };
+
   return (
     <html
       lang="en"
@@ -76,6 +99,10 @@ export default function RootLayout({
               })();
             `,
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="min-h-screen bg-surface text-text-primary antialiased">
