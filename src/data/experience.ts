@@ -18,19 +18,19 @@ export interface EducationEntry {
 
 export const experience: ExperienceEntry[] = [
   {
+    role: "Developer Relations Engineer",
+    company: "AppFlowy",
+    period: "June 2026 - Present",
+  },
+  {
     role: "Software Development Engineer",
     company: "Realtimate Labs Pvt. Ltd.",
-    period: "October 2023 — Present",
+    period: "October 2023 — May 2026",
   },
   {
     role: "Software Development Engineer Intern",
     company: "AppFlowy Inc.",
     period: "January 2023 — October 2023",
-  },
-  {
-    role: "Web Development Intern",
-    company: "EasyManage Services",
-    period: "February 2022 — June 2022",
   },
   {
     role: "YouTube Creator",
@@ -43,10 +43,10 @@ export const skills: string[] = [
   "React, Next.js, Angular",
   "Express, Node.js",
   "Flutter & Dart",
+  "Developer Advocacy",
   "UI/UX Design (Figma)",
-  "Data Structures & Algorithms",
   "MongoDB, PostgreSQL",
-  "Git, TypeScript, Python"
+  "Git, TypeScript, Python",
 ];
 
 export const achievements: string[] = [
